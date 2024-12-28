@@ -5,9 +5,9 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:input_quantity/src/floating_point.dart';
 import 'package:input_quantity/src/constant.dart';
 import 'package:input_quantity/src/decoration_props.dart';
+import 'package:input_quantity/src/floating_point.dart';
 import 'package:input_quantity/src/form_props.dart';
 
 import 'build_btn.dart';
@@ -369,7 +369,7 @@ class _InputQtyState extends State<InputQty> {
                   color: Theme.of(context)
                       .colorScheme
                       .onSurface
-                      .withValues(alpha: 0.38))),
+                      .withOpacity(0.38))),
       enabledBorder: widget.decoration.enabledBorder ?? defaultBorder,
       focusedBorder: widget.decoration.focusedBorder ?? defaultBorder,
       focusedErrorBorder:
